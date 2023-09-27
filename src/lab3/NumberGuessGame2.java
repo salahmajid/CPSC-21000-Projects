@@ -4,12 +4,13 @@ import java.util.Random;
 import java.util.Scanner;
 
 public class NumberGuessGame2 {
+	static final int BOUND = 101;
 
 	public static void main(String[] args) {
 		Scanner scan = new Scanner(System.in);
 
 		Random gen = new Random();
-		int randNum = gen.nextInt(101);
+		int randNum = gen.nextInt(BOUND);
 		System.out.println(randNum);
 
 		System.out.println("Guess an integer between 0 and 100: ");
